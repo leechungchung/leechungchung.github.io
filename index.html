@@ -146,10 +146,10 @@
         </header>
         <div class="case-body">
           <div class="facts">
-            <div class="fact"><b>문제</b><p>사람이 하지 않아도 될 일을 사람이 매일 하고 있었습니다. 화면을 캡처해 올리고, 지표를 옮겨 적고, 시세를 지켜보는 일이 업무 시간을 잡아먹는 구조를 바꾸려 했습니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>업무를 수집, 생성, 게시, 발송 네 단계로 쪼개 어떤 채널이든 같은 흐름에 태우고, 사람은 결과를 확인하는 자리에만 남겼습니다. 실수는 테스트 모드와 재발송 금지 같은 원칙으로 막았습니다.</p></div>
-            <div class="fact"><b>만든 것</b><p>Playwright로 회사 서비스와 네이버에 로그인해 필요한 화면과 데이터를 가져오고, GPT로 글을 쓴 뒤 카페, 프리미엄콘텐츠, 텔레그램, 앱 푸시로 내보내는 작업 10종을 스케줄러 하나에 올렸습니다.</p></div>
-            <div class="fact"><b>결과</b><p>반복적이거나 감시가 필요한 일, 예를 들어 종목이 기준 등락률을 넘는 순간을 지켜보다 알리는 일까지 사람에게서 떼어냈습니다. 지겹고 비효율적인 노동을 최소화하는 것이 목표였고, 지금은 매 거래일 스스로 돌아갑니다.</p></div>
+            <div class="fact"><b>문제</b><p>캡처해 올리고, 지표를 옮겨 적고, 시세를 지켜보는 일을 사람이 매일 하고 있었습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>모든 업무를 수집 → 생성 → 게시 → 발송으로 표준화하고, 사람은 결과 확인만 하게 했습니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>Playwright 로그인·수집, GPT 작성, 채널 발송까지 이어지는 작업 10종을 스케줄러 하나에 올렸습니다.</p></div>
+            <div class="fact"><b>결과</b><p>반복되거나 감시가 필요한 일을 사람에게서 떼어냈고, 매 거래일 스스로 돌아갑니다.</p></div>
           </div>
           <div class="visual">
             <div class="bezel"><img src="assets/img/autorobot.webp" alt="자동화 통합 관리자 화면" loading="lazy"></div>
@@ -179,7 +179,7 @@
         <div class="case-body">
           <div class="facts">
             <div class="fact"><b>문제</b><p>개인투자자가 범용 AI에 종목을 물으면 시세도 차트도 없는 일반론만 돌아옵니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>같은 종목이라도 투자 성향, 금액, 기간, 목적에 따라 다른 답을 주도록 결과값을 개인화했습니다. 첫 답에서 끝나지 않고 후속 질문으로 파고들 수 있게 설계했고, 범용 AI보다 전문적인 분석을 목표로 잡았습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>같은 종목이라도 투자 성향, 금액, 기간, 목적에 따라 다른 답을 주도록 결과값을 개인화했습니다. 첫 답에서 끝나지 않고 다음 제안 질문까지 자동으로 생성되게 구조를 가져갔습니다.</p></div>
             <div class="fact"><b>만든 것</b><p>종목 자동완성, 차트·지표 연동, 추천 질문으로 이어지는 대화, 대화 이력 관리.</p></div>
             <div class="fact"><b>결과</b><p>2026년 7월 1일 출시, 운영 중.</p></div>
           </div>
@@ -197,15 +197,15 @@
           <div>
             <span class="case-kicker">이커머스 상품 검증 · 강의 실습 도구 · 운영 중</span>
             <h3>SellQ Agent</h3>
-            <p class="case-one">무자본·배대지 셀러가 '오늘 뭘 등록할지'를 감이 아니라 점수로 정하게 하는 AI 작전참모입니다.</p>
+            <p class="case-one">무자본·배대지 셀러가 '오늘 뭘 등록할지'를 감이 아니라 점수로 정하게 하는 솔루션입니다.</p>
           </div>
           <a class="pill" href="https://sellq-agent.vercel.app/" target="_blank" rel="noopener">sellq-agent.vercel.app <b>↗</b></a>
         </header>
         <div class="case-body">
           <div class="facts">
-            <div class="fact"><b>문제</b><p>초보 리셀러는 시세도 경쟁도 모른 채 상품을 올립니다. 이런 초보 리셀러를 위한 교육용 자료로 1인 개발한 웹페이지입니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>감이 아니라 점수로 결정하게 했습니다. 수요, 경쟁, 마진, 리스크, 시즌성을 한 점수로 묶고, 셀러의 상황에 따라 비중을 바꿀 수 있게 했습니다.</p></div>
-            <div class="fact"><b>만든 것</b><p>네이버 검색광고 API를 활용한 상품 검증과 경쟁 분석, AI API 키로 상세페이지 가이드라인을 만드는 기능(영상·사진 제작용 페이지로 확장 가능), 달마다 준비할 상품을 보여주는 시즌 캘린더.</p></div>
+            <div class="fact"><b>문제</b><p>초보 리셀러는 시세도 경쟁도 모른 채 상품을 올립니다. 이들을 위한 교육용으로 1인 개발했습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>감이 아니라 점수로 결정하게 했습니다. 수요·경쟁·마진·리스크·시즌성을 한 점수로 묶고 비중은 셀러가 조절합니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>검색광고 API 기반 상품 검증·경쟁 분석, AI 상세페이지 가이드라인 생성(영상·사진 제작용으로 확장 가능), 시즌 캘린더.</p></div>
             <div class="fact"><b>결과</b><p>도매꾹·도매매 'AI 직원 만들기' 강의의 실습 도구로 사용. 설치형 exe 패키지도 배포.</p></div>
           </div>
           <div class="visual">
@@ -228,9 +228,9 @@
         </header>
         <div class="case-body">
           <div class="facts">
-            <div class="fact"><b>문제</b><p>의류 전문 이커머스 회사 대표와의 미팅에서 광고비, 수수료, 마진율을 한눈에 관리하기 어렵다는 니즈를 확인했습니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>순매출 → 광고 효율(ROAS) → 원가 반영 실손익 순서로 화면을 배치. 예측 대신 실측만 씁니다. 품목별로 월 광고 ON/OFF를 표시해 켠 달과 끈 달의 평균 매출을 나란히 비교합니다.</p></div>
-            <div class="fact"><b>만든 것</b><p>매출 파일을 올리면 취소·반품을 뺀 순매출, 광고비 대비 효율, 원가를 반영한 실손익이 한 화면에 정리됩니다. 광고를 켠 달과 끈 달의 매출을 나란히 비교해 광고가 남는 장사였는지 바로 보입니다.</p></div>
+            <div class="fact"><b>문제</b><p>의류 이커머스 대표와의 미팅에서 광고비·수수료·마진율 관리가 어렵다는 니즈를 확인했습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>순매출, 광고 효율, 실손익 순서로 보여주고 예측 대신 실측만 씁니다. 광고를 켠 달과 끈 달을 나란히 비교합니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>매출 파일을 올리면 순매출·광고 효율·실손익이 한 화면에 정리되고, 광고가 남는 장사였는지 바로 보입니다.</p></div>
             <div class="fact"><b>결과</b><p>이커머스 교육에 활용, 일부 교육 참가자에게 무료 배포.</p></div>
           </div>
           <div class="visual">
@@ -266,11 +266,11 @@
       <div class="slide-txt">
         <span class="case-kicker">AI 기사 생성 시스템 · 2026.08 ~ · 파일럿</span>
         <h3>ADAMS</h3>
-        <p class="case-one">AI Data Assistant Media System. 매 거래일 17,645개 종목의 데이터를 룰 200여 개로 검사해 '주목도' 점수를 매기고, 점수 구간에 맞는 5종 기사(속보·브리핑·기사·심층·전략리포트)를 AI가 씁니다.</p>
+        <p class="case-one">AI Data Assistant Media System. 매 거래일 전 종목 데이터를 룰로 검사해 주목도를 매기고, 점수에 맞는 기사를 AI가 쓰는 시스템입니다.</p>
         <ul class="did">
-          <li><b>기사 유형 체계 확정</b> 프롬프트 11개가 점수축과 룰축으로 겹쳐 있던 문제를 규명해 L1·L2 각 5종으로 정리. 유형별 분량 300~1,500자 규칙.</li>
-          <li><b>프롬프트 21종 v2 전량 개정</b> 외부 모델에 자동 주입하는 백테스트를 10여 회 돌려 실패 원인(지표 원값 노출, 반복, 물러서는 어투)을 고쳤고, 룰 이름을 독자 언어로 번역하는 해석표를 만들었습니다.</li>
-          <li><b>화면 9종 기획과 프로토타입</b> 카드 보기, 기사 전문, 시장 연계 기사, 주목할 점 찾기, 기사 만들기(PRO 포인트 정책값)까지 구조·문구·정책을 지정. 랜딩 8섹션, 마케팅 플랜, 로그인 썸네일 제작.</li>
+          <li><b>기사 유형 체계 확정</b> 겹쳐 있던 프롬프트를 정리해 속보부터 전략리포트까지 기사 유형 5종 체계로 확정했습니다.</li>
+          <li><b>프롬프트 21종 v2 전량 개정</b> 백테스트로 실패 원인을 찾아 고치고, 룰 이름을 독자 언어로 번역하는 해석표를 만들었습니다.</li>
+          <li><b>화면 기획과 프로토타입</b> 카드 보기, 기사 전문, 시장 연계, 기사 만들기까지 구조·문구·정책을 지정했고, 랜딩 페이지와 마케팅 플랜도 만들었습니다.</li>
         </ul>
         <div class="slide-links">
           <a class="btn sm" href="adams/intro.html" target="_blank" rel="noopener"><span>소개 페이지</span><b class="arr">↗</b></a>
@@ -278,10 +278,10 @@
         </div>
       </div>
       <div class="slide-vis">
-        <figure class="bezel cap"><img src="assets/img/adams_main.webp" alt="ADAMS 메인 화면" loading="lazy"><figcaption>자산군 5종 × 기사 유형 5종 · 카드에 주목도와 근거 룰이 붙습니다</figcaption></figure>
+        <figure class="bezel cap"><img src="assets/img/adams_main.webp" alt="ADAMS 메인 화면" loading="lazy"><figcaption>메인 · 카드마다 주목도와 근거가 붙습니다</figcaption></figure>
         <div class="duo">
-          <figure class="bezel cap"><img src="assets/img/adams_rules.webp" alt="주목할 점으로 찾기" loading="lazy"><figcaption>주목할 점 찾기 · 오늘 발화한 룰만 2단계로</figcaption></figure>
-          <figure class="bezel cap"><img src="assets/img/adams_make.webp" alt="기사 만들기 PRO" loading="lazy"><figcaption>기사 만들기 PRO · 첫 생산가와 열람가 정책</figcaption></figure>
+          <figure class="bezel cap"><img src="assets/img/adams_rules.webp" alt="주목할 점으로 찾기" loading="lazy"><figcaption>주목할 점으로 찾기</figcaption></figure>
+          <figure class="bezel cap"><img src="assets/img/adams_make.webp" alt="기사 만들기 PRO" loading="lazy"><figcaption>기사 만들기 PRO</figcaption></figure>
         </div>
       </div>
     </article>
@@ -293,19 +293,19 @@
         <h3>AI 데이터맵</h3>
         <p class="case-one">시장·거시 데이터와 각종 자산군에 AI를 접목해 분석하는 플랫폼입니다. GPT-Chart, GPT-Table, 마켓마인드, 이벤트 캘린더로 구성됩니다.</p>
         <ul class="did">
-          <li><b>콘텐츠 구조 정의</b> 대시보드, GPT-Chart 6종, GPT-Table 5종, 마켓마인드, 이벤트 캘린더의 메뉴 트리와 각 화면이 담을 콘텐츠를 문서로 확정.</li>
-          <li><b>일간 콘텐츠 포맷 설계</b> 글로벌 모닝지표 브리핑과 주간 증시일정의 구성, 출처, 발행 시각을 정해 매 거래일 같은 형식으로 나가게 했습니다.</li>
-          <li><b>콘텐츠 운영 자동화</b> 그 브리핑과 증시일정을 제가 만든 자동화가 GPT-Report와 이벤트 캘린더에 매 거래일 게시합니다.</li>
+          <li><b>콘텐츠 구조 정의</b> 대시보드, GPT-Chart, GPT-Table, 마켓마인드, 이벤트 캘린더 각 화면이 담을 콘텐츠를 정했습니다.</li>
+          <li><b>일간 콘텐츠 포맷 설계</b> 글로벌 모닝지표 브리핑과 주간 증시일정의 구성과 발행 시각을 정했습니다.</li>
+          <li><b>콘텐츠 운영 자동화</b> 그 콘텐츠를 제가 만든 자동화가 매 거래일 게시합니다.</li>
         </ul>
         <div class="slide-links">
           <a class="btn sm" href="https://ai-datamap.com/" target="_blank" rel="noopener"><span>ai-datamap.com</span><b class="arr">↗</b></a>
         </div>
       </div>
       <div class="slide-vis">
-        <figure class="bezel cap"><img src="assets/img/datamap.webp" alt="AI 데이터맵 대시보드" loading="lazy"><figcaption>대시보드 · 마켓·매크로 데이터와 빠른 차트</figcaption></figure>
+        <figure class="bezel cap"><img src="assets/img/datamap.webp" alt="AI 데이터맵 대시보드" loading="lazy"><figcaption>대시보드</figcaption></figure>
         <div class="duo">
-          <figure class="bezel cap"><img src="assets/img/datamap_calendar.webp" alt="이벤트 캘린더" loading="lazy"><figcaption>이벤트 캘린더 · 주간 증시일정 자동 등록</figcaption></figure>
-          <figure class="bezel cap"><img src="assets/img/datamap_report.webp" alt="GPT-Report" loading="lazy"><figcaption>GPT-Report · 매 거래일 자동 게시</figcaption></figure>
+          <figure class="bezel cap"><img src="assets/img/datamap_calendar.webp" alt="이벤트 캘린더" loading="lazy"><figcaption>이벤트 캘린더</figcaption></figure>
+          <figure class="bezel cap"><img src="assets/img/datamap_report.webp" alt="GPT-Report" loading="lazy"><figcaption>GPT-Report</figcaption></figure>
         </div>
       </div>
     </article>
@@ -318,7 +318,7 @@
         <p class="case-one">분할매매 표, 고저가 예측, 웨이브 차트와 Dr.캔들, 오늘의 공략주, 실시간 푸시톡을 담은 아임차트의 모바일 서비스입니다.</p>
         <ul class="did">
           <li><b>콘텐츠 선정</b> 아임차트 PC 버전의 핵심 콘텐츠를 골라 모바일에 맞게 재구성하고, 화면 UI를 기획했습니다.</li>
-          <li><b>푸시톡 콘텐츠 흐름</b> 개장 전략, 오늘의 공략주, 시세 알림이 정해진 시각에 푸시톡으로 이어지도록 하루 콘텐츠 흐름을 설계했습니다.</li>
+          <li><b>푸시톡 콘텐츠 흐름</b> 개장 전략, 오늘의 공략주, 시세 알림이 시각에 맞춰 푸시톡으로 이어지도록 설계했습니다.</li>
           </ul>
         <div class="slide-links">
           <a class="btn sm" href="https://iamchart.co.kr/" target="_blank" rel="noopener"><span>iamchart.co.kr</span><b class="arr">↗</b></a>
