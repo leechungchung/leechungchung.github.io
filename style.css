@@ -157,11 +157,15 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 .tags{display:inline-block;margin-top:12px;font-size:12px;color:var(--accent);padding:4px 10px;border-radius:999px;background:var(--accent-soft)}
 
 /* ================= case studies (sticky stack) ================= */
-.work{padding-bottom:clamp(90px,11vw,160px)}
+.work{padding-bottom:clamp(30px,4vw,60px)}
 .stack{position:relative}
+.stack{display:flow-root}
+.stack-end{height:26vh}
 .case-wrap{position:sticky;top:calc(84px + var(--i) * 14px);margin-bottom:34vh}
 .case-wrap:last-child{margin-bottom:0}
 .case-wrap.static{position:static;margin-bottom:24px}
+.case-wrap.static:last-child{margin-bottom:0}
+.stack:has(.static) .stack-end{height:40px}
 .case{padding:0}
 .case-wrap > .case > *{}
 .case-head,.case-body{background:var(--card)}
