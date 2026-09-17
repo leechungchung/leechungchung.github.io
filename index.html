@@ -4,175 +4,367 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>이충혁 · AI 기획자</title>
-<meta name="description" content="AI 기획자 이충혁의 포트폴리오. 서비스 기획부터 개발, 배포, 운영까지 직접 끝냅니다.">
+<meta name="description" content="AI 기획자 이충혁. 금융 데이터 회사에서 AI 서비스 7개를 기획하고 4개를 직접 만들어 운영합니다.">
 <meta name="robots" content="noindex">
 <meta property="og:title" content="이충혁 · AI 기획자">
-<meta property="og:description" content="기획으로 끝내지 않고, 직접 만들어 내놓습니다.">
+<meta property="og:description" content="매일 아침, 제가 만든 자동화가 회사 채널 6곳에 글을 올립니다.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#f1f0ec" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23e8431f'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#f4f3f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e0e0d" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e63f1c'/%3E%3Ctext x='16' y='22' font-size='17' font-weight='800' text-anchor='middle' fill='white' font-family='sans-serif'%3E이%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="preload" as="font" type="font/woff2" crossorigin href="https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="nav" id="top">
-  <a class="nav-name" href="#top">이충혁</a>
-  <nav class="nav-links">
-    <a href="#solo">프로젝트</a>
-    <a href="#team">팀 기획</a>
-    <a href="#lecture">강의</a>
-    <a href="#career">경력</a>
-  </nav>
-  <div class="nav-right">
-    <a class="nav-mail" href="mailto:poohforyou17@gmail.com">poohforyou17@gmail.com</a>
-    <button class="theme" id="theme" type="button" aria-label="테마 전환"><span class="theme-dot"></span></button>
+  <div class="nav-pill">
+    <a class="nav-name" href="#top">이충혁</a>
+    <nav class="nav-links">
+      <a href="#work">프로젝트</a>
+      <a href="#team">팀 기획</a>
+      <a href="#lecture">강의</a>
+      <a href="#career">경력</a>
+    </nav>
+    <div class="nav-right">
+      <a class="nav-mail" href="mailto:poohforyou17@gmail.com">poohforyou17@gmail.com</a>
+      <button class="theme" id="theme" type="button" aria-label="테마 전환"><span></span></button>
+    </div>
   </div>
 </header>
 
 <main>
 
-<!-- HERO -->
+<!-- ============ HERO ============ -->
 <section class="hero" id="hero">
-  <canvas class="field" id="field" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
-    <h1 class="hero-h">
-      <span class="ln"><span class="w">기획으로</span> <span class="w">끝내지</span> <span class="w">않고,</span></span>
-      <span class="ln"><span class="w">직접</span> <span class="w">만들어</span> <span class="w em">내놓습니다.</span></span>
-    </h1>
-    <p class="hero-p rv">AI 기획자 이충혁. 서비스 기획부터 개발, 배포, 운영까지 혼자 끝냅니다.</p>
-    <div class="hero-cta rv">
-      <a class="btn mag" href="#solo"><span>프로젝트 보기</span></a>
-      <a class="btn ghost mag" href="mailto:poohforyou17@gmail.com"><span>이메일 보내기</span></a>
+    <div class="hero-txt">
+      <span class="eyebrow">AI 기획자 · 이충혁</span>
+      <h1 class="hero-h">
+        <span class="hl"><i class="mk" style="--d:.15s">매일 아침,</i></span>
+        <span class="hl"><i class="mk" style="--d:.45s">제가 만든 자동화가</i></span>
+        <span class="hl"><i class="mk" style="--d:.75s">회사 채널 6곳에 글을 올립니다.</i></span>
+      </h1>
+      <p class="hero-p rv">금융 데이터 회사에서 5년. AI 서비스 7개를 기획했고, 그중 4개는 혼자 만들어 운영합니다.</p>
+      <div class="hero-cta rv">
+        <a class="btn" href="#work"><span>프로젝트 보기</span><b class="arr">↓</b></a>
+        <a class="btn ghost" href="mailto:poohforyou17@gmail.com"><span>이메일 보내기</span><b class="arr">↗</b></a>
+      </div>
+    </div>
+
+    <div class="strip-wrap" aria-hidden="true">
+      <div class="strip">
+        <div class="strip-track">
+          <figure class="shot"><img src="assets/img/stockr.webp" alt=""><figcaption>Stockr</figcaption></figure>
+          <figure class="shot"><img src="assets/img/adams_main.webp" alt=""><figcaption>ADAMS</figcaption></figure>
+          <figure class="shot"><img src="assets/img/sellq2.webp" alt=""><figcaption>SellQ Agent</figcaption></figure>
+          <figure class="shot"><img src="assets/img/autorobot_c.webp" alt=""><figcaption>자동화 통합 관리자</figcaption></figure>
+          <figure class="shot"><img src="assets/img/datamap_calendar.webp" alt=""><figcaption>AI 데이터맵</figcaption></figure>
+          <figure class="shot"><img src="assets/img/sales.webp" alt=""><figcaption>매출관리 AI 직원</figcaption></figure>
+          <figure class="shot"><img src="assets/img/stockr.webp" alt=""><figcaption>Stockr</figcaption></figure>
+          <figure class="shot"><img src="assets/img/adams_main.webp" alt=""><figcaption>ADAMS</figcaption></figure>
+          <figure class="shot"><img src="assets/img/sellq2.webp" alt=""><figcaption>SellQ Agent</figcaption></figure>
+          <figure class="shot"><img src="assets/img/autorobot_c.webp" alt=""><figcaption>자동화 통합 관리자</figcaption></figure>
+          <figure class="shot"><img src="assets/img/datamap_calendar.webp" alt=""><figcaption>AI 데이터맵</figcaption></figure>
+          <figure class="shot"><img src="assets/img/sales.webp" alt=""><figcaption>매출관리 AI 직원</figcaption></figure>
+        </div>
+      </div>
+      <div class="strip strip-b">
+        <div class="strip-track">
+          <figure class="shot tall"><img src="assets/img/m_trend.webp" alt=""><figcaption>아임차트M</figcaption></figure>
+          <figure class="shot"><img src="assets/img/adams_make.webp" alt=""><figcaption>ADAMS · 기사 만들기</figcaption></figure>
+          <figure class="shot tall"><img src="assets/img/m_push.webp" alt=""><figcaption>아임차트M · 푸시톡</figcaption></figure>
+          <figure class="shot"><img src="assets/img/datamap_report.webp" alt=""><figcaption>AI 데이터맵 · GPT-Report</figcaption></figure>
+          <figure class="shot tall"><img src="assets/img/m_watch.webp" alt=""><figcaption>아임차트M · 공략주</figcaption></figure>
+          <figure class="shot tall"><img src="assets/img/m_trend.webp" alt=""><figcaption>아임차트M</figcaption></figure>
+          <figure class="shot"><img src="assets/img/adams_make.webp" alt=""><figcaption>ADAMS · 기사 만들기</figcaption></figure>
+          <figure class="shot tall"><img src="assets/img/m_push.webp" alt=""><figcaption>아임차트M · 푸시톡</figcaption></figure>
+          <figure class="shot"><img src="assets/img/datamap_report.webp" alt=""><figcaption>AI 데이터맵 · GPT-Report</figcaption></figure>
+          <figure class="shot tall"><img src="assets/img/m_watch.webp" alt=""><figcaption>아임차트M · 공략주</figcaption></figure>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- NUMBERS -->
+<!-- ============ NUMBERS ============ -->
 <section class="nums wrap">
-  <div class="num rv"><b data-count="4">0</b><span>서비스<br>1인 기획·개발·배포</span></div>
-  <div class="num rv"><b data-count="3">0</b><span>플랫폼<br>팀 기획 참여</span></div>
-  <div class="num rv"><b data-count="4">0</b><span>AI 강의<br>보조·실습 강사</span></div>
-  <div class="num rv"><b data-count="6000">0</b><span>구독자<br>유튜브 2개월 성과</span></div>
+  <div class="num rv"><b data-count="7">0</b><span>기획한 AI 서비스</span></div>
+  <div class="num rv"><b data-count="4">0</b><span>혼자 만들어 운영 중</span></div>
+  <div class="num rv"><b data-count="21">0</b><span>전량 개정한 기사 프롬프트</span></div>
+  <div class="num rv"><b data-count="10">0</b><span>매 거래일 돌아가는 자동화 작업</span></div>
 </section>
 
-<!-- SOLO PROJECTS -->
-<section class="solo wrap" id="solo">
-  <div class="sec-head rv">
+<!-- ============ PROCESS ============ -->
+<section class="proc wrap" id="proc">
+  <h2 class="rv">기획서를 넘기는 데서 멈추지 않고,<br>끝까지 갑니다.</h2>
+  <div class="rail-line rv" id="railLine"><i></i></div>
+  <ol class="steps">
+    <li class="step rv">
+      <b>문제 정의</b>
+      <p>숫자로 원인을 찝습니다. 프리미엄콘텐츠 조회수 급감은 알고리즘이 아니라 인당 열독 75→4.8회 붕괴였습니다.</p>
+      <span class="tags">아임차트 채널 분석</span>
+    </li>
+    <li class="step rv">
+      <b>화면·콘텐츠 기획</b>
+      <p>무엇을 보여주고 무엇을 감출지 정합니다. ADAMS는 룰 200여 개를 나열하지 않고 '오늘 발화한 것'만 2단계로 보여줍니다.</p>
+      <span class="tags">ADAMS · AI 데이터맵 · 아임차트M</span>
+    </li>
+    <li class="step rv">
+      <b>프롬프트 설계</b>
+      <p>지침을 쓰고 백테스트로 검증합니다. 실패 원인(지표 원값 노출, 물러서는 어투)을 진단해 21종을 v2로 갈아엎었습니다.</p>
+      <span class="tags">ADAMS · Stockr</span>
+    </li>
+    <li class="step rv">
+      <b>개발·배포</b>
+      <p>Claude Code와 Codex로 직접 만들어 Vercel, Railway에 올립니다. 기획서가 아니라 URL을 넘깁니다.</p>
+      <span class="tags">Stockr · SellQ · 매출관리 · 자동화</span>
+    </li>
+    <li class="step rv">
+      <b>운영·자동화</b>
+      <p>매 거래일 자동으로 글을 쓰고, 게시하고, 발송합니다. 사고를 겪고 나서 '지시 없는 재발송 금지' 같은 운영 원칙을 세웠습니다.</p>
+      <span class="tags">자동화 통합 관리자</span>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ CASE STUDIES ============ -->
+<section class="work" id="work">
+  <div class="wrap sec-head rv">
     <h2>1인 기획·개발</h2>
-    <p>Claude, Codex, VSCode로 기획서 대신 동작하는 서비스를 냅니다.</p>
+    <p>문제를 정의하고, 기획을 판단하고, 직접 만들어 운영까지 한 서비스 4개입니다.</p>
   </div>
 
-  <div class="solo-grid">
-    <ul class="plist" id="plist">
-      <li class="prow rv is-on" data-img="assets/img/stockr.webp">
-        <a href="https://stockr.iamchart.co.kr/" target="_blank" rel="noopener">
-          <span class="prow-t">Stockr</span>
-          <span class="prow-d">종목을 물으면 분석으로 답하는 대화형 AI 주식 분석</span>
-          <span class="prow-a">열기 ↗</span>
-        </a>
-        <img class="prow-img" src="assets/img/stockr.webp" alt="Stockr 화면" loading="lazy">
-      </li>
-      <li class="prow rv" data-img="assets/img/sellq2.webp">
-        <a href="https://sellq-agent.vercel.app/" target="_blank" rel="noopener">
-          <span class="prow-t">SellQ Agent</span>
-          <span class="prow-d">무자본 셀러를 위한 상품 검증과 상세페이지 생성</span>
-          <span class="prow-a">열기 ↗</span>
-        </a>
-        <img class="prow-img" src="assets/img/sellq2.webp" alt="SellQ Agent 화면" loading="lazy">
-      </li>
-      <li class="prow rv" data-img="assets/img/sales.webp">
-        <a href="https://sales-ai-employee.vercel.app/" target="_blank" rel="noopener">
-          <span class="prow-t">매출관리 AI 직원</span>
-          <span class="prow-d">쿠팡·네이버 매출을 올리면 KPI, 광고 효율, 손익까지</span>
-          <span class="prow-a">열기 ↗</span>
-        </a>
-        <img class="prow-img" src="assets/img/sales.webp" alt="매출관리 AI 직원 화면" loading="lazy">
-      </li>
-      <li class="prow rv" data-img="assets/img/autorobot.webp">
-        <a href="#solo" class="nolink" tabindex="-1" aria-disabled="true">
-          <span class="prow-t">자동화 통합 관리자</span>
-          <span class="prow-d">텔레그램·네이버 자동 발송 3종을 스케줄러 하나로 운영하는 사내 웹</span>
-          <span class="prow-a">사내용</span>
-        </a>
-        <img class="prow-img" src="assets/img/autorobot.webp" alt="자동화 통합 관리자 화면" loading="lazy">
-      </li>
-    </ul>
+  <div class="stack">
 
-    <div class="preview" id="preview">
-      <div class="preview-card" id="pcard">
-        <img id="pimg" src="assets/img/stockr.webp" alt="" decoding="async">
+    <!-- CASE 1: 자동화 -->
+    <article class="case-wrap" style="--i:0">
+      <div class="case wrap">
+        <header class="case-head">
+          <div>
+            <span class="case-kicker">사내 운영 자동화 · 2026.09 · 운영 중</span>
+            <h3>자동화 통합 관리자</h3>
+            <p class="case-one">회사 콘텐츠 운영을 통째로 자동화한 웹 관리자. 로그인해서 캡처하고, GPT로 글을 쓰고, 6개 채널에 게시·발송합니다.</p>
+          </div>
+          <span class="pill muted">사내용 · 화면만 공개</span>
+        </header>
+        <div class="case-body">
+          <div class="facts">
+            <div class="fact"><b>문제</b><p>자동화 3개가 폴더 3곳과 Windows 스케줄러 3개에 흩어져 서로 충돌했고, PC가 꺼지면 멈췼습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>한 화면에서 스케줄·실행·이력·로그인 세션을 관리. 직렬 실행 큐, 테스트 모드와 스케줄러 전역 스위치, 거래일·휴장일 판정, 같은 날 재실행 시 성공분 건너뛰기.</p></div>
+            <div class="fact"><b>만든 것</b><p>작업 10종. Playwright로 아임차트M·네이버·AI데이터맵에 로그인해 캡처하고, OpenAI로 브리핑을 쓰고, 카페·프리미엄콘텐츠·GPT-Report·이벤트 캘린더에 게시, 텔레그램·앱 푸시로 발송. Docker로 Railway 상시 운영, 2차 인증은 noVNC 원격 화면으로.</p></div>
+            <div class="fact"><b>결과</b><p>11일 만에 폴더 4개를 하나로 합쳤고, 매 거래일 06:30부터 09:10까지 사람 손 없이 돌아갑니다. 재현 불가한 PC·MTS 푸시는 모바일 개발자용 FCM 규격서로 넘겼습니다.</p></div>
+          </div>
+          <div class="visual">
+            <div class="bezel"><img src="assets/img/autorobot.webp" alt="자동화 통합 관리자 화면" loading="lazy"></div>
+            <div class="marq" aria-hidden="true"><div class="marq-track">
+              <span>글로벌 모닝 브리핑 · 3곳 게시</span><span>텔레그램 오늘의 공략주</span><span>네이버프리미엄 오늘의 공략주</span><span>공략주 상승 알림 · 30초 감시</span><span>증시일정 주간 작성</span><span>증시일정 발송</span><span>tPASS 인사이트</span><span>글로벌 모닝지표 표 이미지</span><span>나스닥 100 선물 푸시</span><span>기사 전재</span>
+              <span>글로벌 모닝 브리핑 · 3곳 게시</span><span>텔레그램 오늘의 공략주</span><span>네이버프리미엄 오늘의 공략주</span><span>공략주 상승 알림 · 30초 감시</span><span>증시일정 주간 작성</span><span>증시일정 발송</span><span>tPASS 인사이트</span><span>글로벌 모닝지표 표 이미지</span><span>나스닥 100 선물 푸시</span><span>기사 전재</span>
+            </div></div>
+            <ul class="chips">
+              <li>텔레그램</li><li>네이버 카페</li><li>네이버 프리미엄콘텐츠</li><li>AI데이터맵 GPT-Report</li><li>AI데이터맵 이벤트 캘린더</li><li>아임차트 앱 푸시</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </article>
+
+    <!-- CASE 2: Stockr -->
+    <article class="case-wrap" style="--i:1">
+      <div class="case wrap">
+        <header class="case-head">
+          <div>
+            <span class="case-kicker">대화형 AI 종목 분석 · 2026.07 출시 · 운영 중</span>
+            <h3>Stockr</h3>
+            <p class="case-one">종목명 하나를 넣으면 시세·차트·지표를 붙여 대화로 분석해 주는 서비스. 아임차트 회원용 AI 상담 창구입니다.</p>
+          </div>
+          <a class="pill" href="https://stockr.iamchart.co.kr/" target="_blank" rel="noopener">stockr.iamchart.co.kr <b>↗</b></a>
+        </header>
+        <div class="case-body">
+          <div class="facts">
+            <div class="fact"><b>문제</b><p>개인투자자가 범용 AI에 종목을 물으면 시세도 차트도 없는 일반론만 돌아옵니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>입력은 종목명 하나로 줄이고, 답은 투자 성향(공격·중립·안정), 금액, 기간, 목적에 맞춰 바꿉니다. 유사투자자문 규정상 금지되는 수익률·매매 권유 표현은 프롬프트 층에서 막았습니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>국내·미국 종목 자동완성, 1M~3Y 차트와 이동평균·RSI, 추천 질문, 대화 이력. 아임차트 패밀리 서비스 11종의 배경지식 프롬프트와 질문 키워드 매핑 규칙.</p></div>
+            <div class="fact"><b>결과</b><p>2026년 7월 1일 출시. 로그인 없이 쓸 수 있고, 회사 서비스 전체의 안내 창구 역할까지 맡고 있습니다.</p></div>
+          </div>
+          <div class="visual">
+            <div class="bezel"><img src="assets/img/stockr.webp" alt="Stockr 화면" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 3: SellQ -->
+    <article class="case-wrap" style="--i:2">
+      <div class="case wrap">
+        <header class="case-head">
+          <div>
+            <span class="case-kicker">이커머스 상품 검증 · 강의 실습 도구 · 운영 중</span>
+            <h3>SellQ Agent</h3>
+            <p class="case-one">무자본·배대지 셀러가 '오늘 뭘 등록할지'를 감이 아니라 점수로 정하게 하는 AI 작전참모입니다.</p>
+          </div>
+          <a class="pill" href="https://sellq-agent.vercel.app/" target="_blank" rel="noopener">sellq-agent.vercel.app <b>↗</b></a>
+        </header>
+        <div class="case-body">
+          <div class="facts">
+            <div class="fact"><b>문제</b><p>초보 리셀러는 시세도 경쟁도 모른 채 상품을 올립니다. 개발 도중 네이버 오픈API 신규 발급이 끊겨 데이터 소스도 바꿔야 했습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>네이버 검색광고 API 하나로 100점 점수화. 수요 25, 검색량 15, 경쟁도 20, 마진 20, 리스크 10, 시즌성 10. 비중은 슬라이더로 사용자가 바꿉니다. 품질이 안 나온 '키워드 발굴'은 폐기하고 시즌 캘린더로 대체했습니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>시즌 캘린더, 상품 검증, AI 상세페이지 생성, 후보 키워드 관리, 이력. 업종 52개 인기 키워드 4.8만 개 화이트리스트. API 키는 서버에 저장하지 않는 구조.</p></div>
+            <div class="fact"><b>결과</b><p>도매꾹·도매매 'AI 직원 만들기' 강의의 실습 도구로 사용. 설치형 exe 패키지도 배포.</p></div>
+          </div>
+          <div class="visual">
+            <div class="bezel"><img src="assets/img/sellq2.webp" alt="SellQ Agent 상품검증 화면" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CASE 4: 매출관리 -->
+    <article class="case-wrap" style="--i:3">
+      <div class="case wrap">
+        <header class="case-head">
+          <div>
+            <span class="case-kicker">이커머스 매출 관리 · 'AI 직원 20명' 커리큘럼의 실동작 모듈</span>
+            <h3>매출관리 AI 직원</h3>
+            <p class="case-one">총매출이 아니라 취소·반품·광고비·원가를 뺀 뒤 얼마가 남는지를 보여주는 셀러용 매출 화면입니다.</p>
+          </div>
+          <a class="pill" href="https://sales-ai-employee.vercel.app/" target="_blank" rel="noopener">sales-ai-employee.vercel.app <b>↗</b></a>
+        </header>
+        <div class="case-body">
+          <div class="facts">
+            <div class="fact"><b>문제</b><p>셀러는 플랫폼별 총매출만 보고, 광고를 켠 게 득인지 실인지 끝까지 모릅니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>순매출 → 광고 효율(ROAS) → 원가 반영 실손익 순서로 화면을 배치. 예측 대신 실측만 씁니다. 품목별로 월 광고 ON/OFF를 표시해 켠 달과 끈 달의 평균 매출을 나란히 비교합니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>쿠팡·네이버 탭과 합산 탭, 파일 업로드, 키워드 칩 검색, 행 단위 수정·삭제, 백업·복원. 함께 만든 CS AI 직원은 신뢰도 50% 이상 자동 답변, 20% 미만 사람 인계 규칙으로 동작합니다.</p></div>
+            <div class="fact"><b>결과</b><p>'Commerce AI Company' 커리큘럼(회사 설립 → AI 직원 채용 → 사규 → 인수인계 → 대시보드)에서 실제로 돌아가는 모듈. 1시간 실습 교육 패키지로 정리.</p></div>
+          </div>
+          <div class="visual">
+            <div class="bezel"><img src="assets/img/sales.webp" alt="매출관리 AI 직원 화면" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </article>
+
   </div>
 </section>
 
-<!-- TEAM -->
-<section class="team wrap" id="team">
-  <div class="sec-head rv">
-    <h2>팀 기획</h2>
-    <p>화면과 콘텍트를 정하고, 프롬프트를 관리하고, 랜딩 페이지를 만들었습니다.</p>
+<!-- ============ TEAM ============ -->
+<section class="team" id="team">
+  <div class="wrap sec-head team-head rv">
+    <div>
+      <h2>팀 기획</h2>
+      <p>회사의 세 플랫폼에서 화면과 콘텐츠를 정하고, 프롬프트를 관리하고, 랜딩 페이지를 만들었습니다.</p>
+    </div>
+    <div class="team-ctrl">
+      <button type="button" class="ctl" id="prev" aria-label="이전">←</button>
+      <span class="dots" id="dots"></span>
+      <button type="button" class="ctl" id="next" aria-label="다음">→</button>
+      <button type="button" class="ctl wide" id="expand">펼쳐보기</button>
+    </div>
   </div>
 
-  <div class="bento">
-    <a class="tile tile-a rv pan" href="https://ai-datamap.com/" target="_blank" rel="noopener">
-      <div class="tile-img"><img src="assets/img/datamap.webp" alt="AI 데이터맵 화면" loading="lazy"></div>
-      <div class="tile-txt">
-        <span class="tile-t">AI 데이터맵</span>
-        <span class="tile-d">경제금융통계 분석·리포팅 플랫폼</span>
-        <span class="tile-r">콘텐츠 기획 · UI 기획</span>
+  <div class="rail-outer">
+  <div class="rail" id="rail">
+
+    <!-- ADAMS -->
+    <article class="slide" id="adams">
+      <div class="slide-txt">
+        <span class="case-kicker">AI 기사 생성 시스템 · 2026.08 ~ · 파일럿</span>
+        <h3>ADAMS</h3>
+        <p class="case-one">AI Data Assistant Media System. 매 거래일 17,645개 종목의 데이터를 룰 200여 개로 검사해 '주목도' 점수를 매기고, 점수 구간에 맞는 5종 기사(속보·브리핑·기사·심층·전략리포트)를 AI가 씁니다.</p>
+        <ul class="did">
+          <li><b>기사 유형 체계 확정</b> 프롬프트 11개가 점수축과 룰축으로 겹쳐 있던 문제를 규명해 L1·L2 각 5종으로 정리. 유형별 분량 300~1,500자 규칙.</li>
+          <li><b>프롬프트 21종 v2 전량 개정</b> 외부 모델에 자동 주입하는 백테스트를 10여 회 돌려 실패 원인(지표 원값 노출, 반복, 물러서는 어투)을 고쳤고, 룰 이름을 독자 언어로 번역하는 해석표를 만들었습니다.</li>
+          <li><b>화면 9종 기획과 프로토타입</b> 카드 보기, 기사 전문, 시장 연계 기사, 주목할 점 찾기, 기사 만들기(PRO 포인트 정책값)까지 구조·문구·정책을 지정. 랜딩 8섹션, 마케팅 플랜, 로그인 썸네일 제작.</li>
+        </ul>
+        <div class="slide-links">
+          <a class="btn sm" href="adams/intro.html" target="_blank" rel="noopener"><span>소개 페이지</span><b class="arr">↗</b></a>
+          <a class="btn sm ghost" href="adams/demo.html" target="_blank" rel="noopener"><span>데모 열기</span><b class="arr">↗</b></a>
+        </div>
       </div>
-    </a>
-    <a class="tile tile-b rv pan" href="https://iamchart.co.kr/" target="_blank" rel="noopener">
-      <div class="tile-img"><img src="assets/img/iamchart_pc.webp" alt="아임차트 PC 화면" loading="lazy"></div>
-      <div class="tile-txt">
-        <span class="tile-t">아임차트</span>
-        <span class="tile-d">주가·추세 예측 프로그램</span>
-        <span class="tile-r">콘텐츠 선정 · UI 기획</span>
+      <div class="slide-vis">
+        <figure class="bezel cap"><img src="assets/img/adams_main.webp" alt="ADAMS 메인 화면" loading="lazy"><figcaption>자산군 5종 × 기사 유형 5종 · 카드에 주목도와 근거 룰이 붙습니다</figcaption></figure>
+        <div class="duo">
+          <figure class="bezel cap"><img src="assets/img/adams_rules.webp" alt="주목할 점으로 찾기" loading="lazy"><figcaption>주목할 점 찾기 · 오늘 발화한 룰만 2단계로</figcaption></figure>
+          <figure class="bezel cap"><img src="assets/img/adams_make.webp" alt="기사 만들기 PRO" loading="lazy"><figcaption>기사 만들기 PRO · 첫 생산가와 열람가 정책</figcaption></figure>
+        </div>
       </div>
-    </a>
-    <div class="tile tile-c rv">
-      <div class="tile-txt">
-        <span class="tile-t">ADAMS</span>
-        <span class="tile-d">시장 데이터를 기사로 바꾸는 기사통합 시스템</span>
-        <span class="tile-r">화면·콘텐츠 기획 · 프롬프트 관리 · 랜딩 페이지 제작</span>
-        <span class="tile-btns">
-          <a class="btn sm mag" href="adams/intro.html" target="_blank" rel="noopener"><span>소개 페이지 열기</span></a>
-          <a class="btn sm ghost mag" href="adams/demo.html" target="_blank" rel="noopener"><span>데모 열기</span></a>
-        </span>
+    </article>
+
+    <!-- 데이터맵 -->
+    <article class="slide" id="datamap">
+      <div class="slide-txt">
+        <span class="case-kicker">경제금융통계 분석·리포팅 플랫폼 · 운영 중</span>
+        <h3>AI 데이터맵</h3>
+        <p class="case-one">시장·거시 데이터 대시보드 위에 GPT-Chart, GPT-Table, 마켓마인드(AI 리서치·GPT-Report), 이벤트 캘린더를 얹은 회사의 데이터 플랫폼입니다.</p>
+        <ul class="did">
+          <li><b>콘텐츠 구조 정의</b> 대시보드, GPT-Chart 6종, GPT-Table 5종, 마켓마인드, 이벤트 캘린더의 메뉴 트리와 각 화면이 담을 콘텐츠를 문서로 확정.</li>
+          <li><b>증권사 제안서 기획</b> DB증권·다올투자증권 대상 8페이지 제안서. "복잡하다"는 피드백에 텍스트를 줄이고 화면을 전량 모바일 세로형으로 재캡처해 3차까지 개정.</li>
+          <li><b>콘텐츠 운영 자동화</b> GPT-Report의 글로벌 모닝지표 브리핑과 이벤트 캘린더의 주간 증시일정은 제가 만든 자동화가 매 거래일 게시합니다.</li>
+        </ul>
+        <div class="slide-links">
+          <a class="btn sm" href="https://ai-datamap.com/" target="_blank" rel="noopener"><span>ai-datamap.com</span><b class="arr">↗</b></a>
+        </div>
       </div>
-      <div class="tile-duo">
-        <a class="duo pan" href="adams/intro.html" target="_blank" rel="noopener"><img src="assets/img/adams_landing.webp" alt="ADAMS 소개 페이지" loading="lazy"></a>
-        <a class="duo pan" href="adams/demo.html" target="_blank" rel="noopener"><img src="assets/img/adams_demo.webp" alt="ADAMS 데모 화면" loading="lazy"></a>
+      <div class="slide-vis">
+        <figure class="bezel cap"><img src="assets/img/datamap.webp" alt="AI 데이터맵 대시보드" loading="lazy"><figcaption>대시보드 · 마켓·매크로 데이터와 빠른 차트</figcaption></figure>
+        <div class="duo">
+          <figure class="bezel cap"><img src="assets/img/datamap_calendar.webp" alt="이벤트 캘린더" loading="lazy"><figcaption>이벤트 캘린더 · 주간 증시일정 자동 등록</figcaption></figure>
+          <figure class="bezel cap"><img src="assets/img/datamap_report.webp" alt="GPT-Report" loading="lazy"><figcaption>GPT-Report · 매 거래일 자동 게시</figcaption></figure>
+        </div>
       </div>
-    </div>
+    </article>
+
+    <!-- 아임차트M -->
+    <article class="slide" id="iamchart">
+      <div class="slide-txt">
+        <span class="case-kicker">주가·추세 예측 · 모바일 웹 · 운영 중</span>
+        <h3>아임차트M</h3>
+        <p class="case-one">분할매매 표, 고저가 예측, 웨이브 차트와 Dr.캔들, 오늘의 공략주, 실시간 푸시톡을 담은 아임차트의 모바일 서비스입니다.</p>
+        <ul class="did">
+          <li><b>콘텐츠 선정</b> 오늘의 공략주, 추세전환 종목, 푸시톡으로 나갈 개장전략·스팟시황 등 매일 채워지는 콘텐츠의 종류와 시각을 정했습니다.</li>
+          <li><b>UI 기획과 설명서</b> 화면별 설명서와 사용자 설명서를 만들었고, 캡처 자동화로 화면이 바뀔 때마다 다시 뽑을 수 있게 했습니다.</li>
+          <li><b>채널 분석</b> 프리미엄콘텐츠 조회수 급감을 실측으로 진단(인당 월 조회 75→4.8회, 검색 개편 가설 기각)하고 발행 6편→1~2편 축소 실험, 07:30 예약 발행, 무료 쿠폰 유입 전략을 제안했습니다.</li>
+        </ul>
+        <div class="slide-links">
+          <a class="btn sm" href="https://iamchart.co.kr/" target="_blank" rel="noopener"><span>iamchart.co.kr</span><b class="arr">↗</b></a>
+        </div>
+      </div>
+      <div class="slide-vis phones">
+        <figure class="phone"><img src="assets/img/m_main.webp" alt="아임차트M 분할매매 표" loading="lazy"><figcaption>분할매매 표</figcaption></figure>
+        <figure class="phone"><img src="assets/img/m_trend.webp" alt="아임차트M 웨이브 차트" loading="lazy"><figcaption>웨이브 차트 · Dr.캔들</figcaption></figure>
+        <figure class="phone"><img src="assets/img/m_watch.webp" alt="아임차트M 공략주" loading="lazy"><figcaption>오늘의 공략주</figcaption></figure>
+        <figure class="phone"><img src="assets/img/m_push.webp" alt="아임차트M 푸시톡" loading="lazy"><figcaption>푸시톡</figcaption></figure>
+      </div>
+    </article>
+
+  </div>
   </div>
 </section>
 
-<!-- LECTURE -->
+<!-- ============ LECTURE ============ -->
 <section class="lecture wrap" id="lecture">
   <div class="lec-grid">
     <div class="sec-head rv">
       <h2>강의</h2>
-      <p>AI를 업무에 쓰는 법을 현장에서 가르쳤습니다.</p>
+      <p>만든 것을 남에게 가르칠 수 있을 때까지 씁니다. 실습형 AI 강의 4건.</p>
     </div>
     <ul class="lec-list">
       <li class="lec rv">
         <span class="lec-org">KVA 한국기술가치평가협회</span>
-        <span class="lec-topic">AI 활용</span>
+        <span class="lec-topic">내 일꾼, 내 비서 에이전트 AI 통합 워크플로우</span>
         <span class="lec-role">보조강사</span>
       </li>
       <li class="lec rv">
-        <span class="lec-org">도매꾹·도매매</span>
+        <span class="lec-org">도매꾹 · 도매매</span>
         <span class="lec-topic">AI 직원 만들기</span>
         <span class="lec-role">실습강사</span>
       </li>
       <li class="lec rv">
         <span class="lec-org">금융투자교육원</span>
         <span class="lec-topic">AI 실전 금융투자 분석과 운용</span>
-        <span class="lec-role">보조·실습강사</span>
+        <span class="lec-role">보조 · 실습강사</span>
       </li>
       <li class="lec rv">
         <span class="lec-org">이에스플랜잇</span>
@@ -183,45 +375,36 @@
   </div>
 </section>
 
-<!-- MEDIA -->
-<section class="media wrap" id="media">
-  <div class="media-grid">
-    <div class="media-txt">
-      <h2 class="rv">2개월, 구독자 <b data-count="6000" data-fmt="ko">0</b>명.</h2>
-      <p class="rv">유튜브 채널과 치지직 방송의 기획·편집을 총괄했습니다. 경영 전략 변경으로 프로젝트는 조기 종료.</p>
-      <ul class="chips rv">
-        <li>OBS 핸들링 · 노이즈 제거 · 크로마키</li>
-        <li>프리미어 프로 편집</li>
-        <li>썸네일 제작</li>
-        <li>영업·마케팅 채널 운영</li>
+<!-- ============ MEDIA & OPS ============ -->
+<section class="etc wrap" id="etc">
+  <div class="etc-grid">
+    <div class="etc-big rv">
+      <span class="case-kicker">유튜브 · 치지직 운영 · 2021.01 ~ 2021.03</span>
+      <h3>2개월, 구독자 <b data-count="6000" data-fmt="ko">0</b>명</h3>
+      <p>기획과 편집을 총괄해 개인 채널을 2개월 만에 6천 명까지 키웠습니다. 경영 전략 변경으로 프로젝트는 조기 종료.</p>
+      <ul class="chips">
+        <li>OBS · 노이즈 제거 · 크로마키</li><li>프리미어 프로 편집</li><li>썸네일 제작</li><li>영업·마케팅 채널 운영</li>
       </ul>
     </div>
-    <div class="eq rv" id="eq" aria-hidden="true"></div>
-  </div>
-</section>
-
-<!-- OPS -->
-<section class="ops wrap" id="ops">
-  <div class="ops-grid">
-    <div class="ops-col rv">
-      <h3>경영지원 · 재무</h3>
+    <div class="etc-col rv">
+      <h4>경영지원 · 재무</h4>
       <p>매출·매입 계산서 발행<br>법인 자금 출납 관리<br>여신 관리 및 제반 업무</p>
     </div>
-    <div class="ops-col rv">
-      <h3>박람회</h3>
+    <div class="etc-col rv">
+      <h4>현장</h4>
       <p>2023 유통인쇼(SETEC) 박람회 참가</p>
     </div>
   </div>
 </section>
 
-<!-- CAREER -->
+<!-- ============ CAREER ============ -->
 <section class="career wrap" id="career">
   <div class="sec-head rv"><h2>경력 · 학력</h2></div>
   <div class="cv">
     <div class="cv-row rv">
       <span class="cv-when">2020.12 - 현재</span>
       <span class="cv-what"><b>이에스플랜잇</b><br>AI 기획자</span>
-      <span class="cv-note">금융 데이터 서비스 기획 · 자동화 · 강의 · 경영지원</span>
+      <span class="cv-note">금융 데이터 서비스 기획 · 프롬프트 · 자동화 · 강의 · 경영지원</span>
     </div>
     <div class="cv-row rv">
       <span class="cv-when">2012.03 - 2019.02</span>
@@ -231,9 +414,10 @@
   </div>
 </section>
 
-<!-- CONTACT -->
+<!-- ============ CONTACT ============ -->
 <section class="contact wrap" id="contact">
-  <a class="big-mail mag rv" href="mailto:poohforyou17@gmail.com" id="bigmail"><span>poohforyou17@gmail.com</span></a>
+  <p class="contact-lead rv">기획서보다 URL로 이야기하는 기획자를 찾고 계시다면.</p>
+  <a class="big-mail rv" href="mailto:poohforyou17@gmail.com"><span>poohforyou17@gmail.com</span></a>
   <div class="contact-row rv">
     <a href="tel:010-6309-9555">010-6309-9555</a>
     <button type="button" class="copy" id="copy" data-v="poohforyou17@gmail.com">이메일 복사</button>
