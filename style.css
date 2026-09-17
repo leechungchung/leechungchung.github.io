@@ -104,7 +104,7 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 /* ================= hero ================= */
 .hero{position:relative;min-height:100dvh;display:flex;align-items:center;padding:110px 0 60px;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,64px);align-items:center}
-.hero-h{margin-top:26px;font-size:clamp(32px,4.5vw,66px);line-height:1.16;letter-spacing:-.035em}
+.hero-h{margin-top:26px;font-size:clamp(32px,4.2vw,60px);line-height:1.16;letter-spacing:-.035em}
 .hl{display:block;margin:.02em 0}
 .mk{
   display:inline;font-style:normal;padding:.06em .16em .04em;border-radius:.12em;
