@@ -47,7 +47,7 @@
         <span class="hl"><i class="mk" style="--d:.45s">제가 만든 자동화가</i></span>
         <span class="hl"><i class="mk" style="--d:.75s">회사 채널 6곳에 글을 올립니다.</i></span>
       </h1>
-      <p class="hero-p rv">금융 데이터 회사에서 5년. AI 서비스 7개를 기획했고, 그중 4개는 혼자 만들어 운영합니다.</p>
+      <p class="hero-p rv">금융 데이터 회사에서 5년<br>7개의 AI 서비스, 1인 기획 4건</p>
       <div class="hero-cta rv">
         <a class="btn" href="#work"><span>프로젝트 보기</span><b class="arr">↓</b></a>
         <a class="btn ghost" href="mailto:poohforyou17@gmail.com"><span>이메일 보내기</span><b class="arr">↗</b></a>
@@ -99,33 +99,28 @@
 
 <!-- ============ PROCESS ============ -->
 <section class="proc wrap" id="proc">
-  <h2 class="rv">기획서를 넘기는 데서 멈추지 않고,<br>끝까지 갑니다.</h2>
+  <h2 class="rv">기획서를 넘기는 데서 멈추지 않고,<br>MVP와 알파 버전까지 만듭니다.</h2>
   <div class="rail-line rv" id="railLine"><i></i></div>
   <ol class="steps">
     <li class="step rv">
       <b>문제 정의</b>
-      <p>숫자로 원인을 찝습니다. 프리미엄콘텐츠 조회수 급감은 알고리즘이 아니라 인당 열독 75→4.8회 붕괴였습니다.</p>
-      <span class="tags">아임차트 채널 분석</span>
+      <p>숫자로 원인을 찾고, 문제를 한 문장으로 정의합니다.</p>
     </li>
     <li class="step rv">
       <b>화면·콘텐츠 기획</b>
-      <p>무엇을 보여주고 무엇을 감출지 정합니다. ADAMS는 룰 200여 개를 나열하지 않고 '오늘 발화한 것'만 2단계로 보여줍니다.</p>
-      <span class="tags">ADAMS · AI 데이터맵 · 아임차트M</span>
+      <p>무엇을 보여주고 무엇을 감출지 정합니다.</p>
     </li>
     <li class="step rv">
       <b>프롬프트 설계</b>
-      <p>지침을 쓰고 백테스트로 검증합니다. 실패 원인(지표 원값 노출, 물러서는 어투)을 진단해 21종을 v2로 갈아엎었습니다.</p>
-      <span class="tags">ADAMS · Stockr</span>
+      <p>지침을 쓰고, 백테스트로 검증하고, 다시 고칩니다.</p>
     </li>
     <li class="step rv">
       <b>개발·배포</b>
-      <p>Claude Code와 Codex로 직접 만들어 Vercel, Railway에 올립니다. 기획서가 아니라 URL을 넘깁니다.</p>
-      <span class="tags">Stockr · SellQ · 매출관리 · 자동화</span>
+      <p>Claude Code와 Codex로 직접 만들어 URL로 넘깁니다.</p>
     </li>
     <li class="step rv">
       <b>운영·자동화</b>
-      <p>매 거래일 자동으로 글을 쓰고, 게시하고, 발송합니다. 사고를 겪고 나서 '지시 없는 재발송 금지' 같은 운영 원칙을 세웠습니다.</p>
-      <span class="tags">자동화 통합 관리자</span>
+      <p>반복되는 운영을 자동화하고, 운영 원칙을 세웁니다.</p>
     </li>
   </ol>
 </section>
@@ -134,7 +129,6 @@
 <section class="work" id="work">
   <div class="wrap sec-head rv">
     <h2>1인 기획·개발</h2>
-    <p>문제를 정의하고, 기획을 판단하고, 직접 만들어 운영까지 한 서비스 4개입니다.</p>
   </div>
 
   <div class="stack">
@@ -146,16 +140,16 @@
           <div>
             <span class="case-kicker">사내 운영 자동화 · 2026.09 · 운영 중</span>
             <h3>자동화 통합 관리자</h3>
-            <p class="case-one">회사 콘텐츠 운영을 통째로 자동화한 웹 관리자. 로그인해서 캡처하고, GPT로 글을 쓰고, 6개 채널에 게시·발송합니다.</p>
+            <p class="case-one">매일 반복되는 게시·발송·감시 업무를,<br>사람이 붙지 않아도 정해진 시각에 스스로 끝나도록 만든 사내 운영 관리자입니다.</p>
           </div>
           <span class="pill muted">사내용 · 화면만 공개</span>
         </header>
         <div class="case-body">
           <div class="facts">
-            <div class="fact"><b>문제</b><p>자동화 3개가 폴더 3곳과 Windows 스케줄러 3개에 흩어져 서로 충돌했고, PC가 꺼지면 멈췼습니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>한 화면에서 스케줄·실행·이력·로그인 세션을 관리. 직렬 실행 큐, 테스트 모드와 스케줄러 전역 스위치, 거래일·휴장일 판정, 같은 날 재실행 시 성공분 건너뛰기.</p></div>
-            <div class="fact"><b>만든 것</b><p>작업 10종. Playwright로 아임차트M·네이버·AI데이터맵에 로그인해 캡처하고, OpenAI로 브리핑을 쓰고, 카페·프리미엄콘텐츠·GPT-Report·이벤트 캘린더에 게시, 텔레그램·앱 푸시로 발송. Docker로 Railway 상시 운영, 2차 인증은 noVNC 원격 화면으로.</p></div>
-            <div class="fact"><b>결과</b><p>11일 만에 폴더 4개를 하나로 합쳤고, 매 거래일 06:30부터 09:10까지 사람 손 없이 돌아갑니다. 재현 불가한 PC·MTS 푸시는 모바일 개발자용 FCM 규격서로 넘겼습니다.</p></div>
+            <div class="fact"><b>문제</b><p>사람이 하지 않아도 될 일을 사람이 매일 하고 있었습니다. 화면을 캡처해 올리고, 지표를 옮겨 적고, 시세를 지켜보는 일이 업무 시간을 잡아먹는 구조를 바꾸려 했습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>업무를 수집, 생성, 게시, 발송 네 단계로 쪼개 어떤 채널이든 같은 흐름에 태우고, 사람은 결과를 확인하는 자리에만 남겼습니다. 실수는 테스트 모드와 재발송 금지 같은 원칙으로 막았습니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>Playwright로 회사 서비스와 네이버에 로그인해 필요한 화면과 데이터를 가져오고, GPT로 글을 쓴 뒤 카페, 프리미엄콘텐츠, 텔레그램, 앱 푸시로 내보내는 작업 10종을 스케줄러 하나에 올렸습니다.</p></div>
+            <div class="fact"><b>결과</b><p>반복적이거나 감시가 필요한 일, 예를 들어 종목이 기준 등락률을 넘는 순간을 지켜보다 알리는 일까지 사람에게서 떼어냈습니다. 지겹고 비효율적인 노동을 최소화하는 것이 목표였고, 지금은 매 거래일 스스로 돌아갑니다.</p></div>
           </div>
           <div class="visual">
             <div class="bezel"><img src="assets/img/autorobot.webp" alt="자동화 통합 관리자 화면" loading="lazy"></div>
@@ -178,19 +172,19 @@
           <div>
             <span class="case-kicker">대화형 AI 종목 분석 · 2026.07 출시 · 운영 중</span>
             <h3>Stockr</h3>
-            <p class="case-one">종목명 하나를 넣으면 시세·차트·지표를 붙여 대화로 분석해 주는 서비스. 아임차트 회원용 AI 상담 창구입니다.</p>
+            <p class="case-one">종목명 하나를 넣으면 시세·차트·지표를 붙여 대화로 분석하고, 이어지는 질문에 계속 답하는 대화형 서비스입니다.</p>
           </div>
           <a class="pill" href="https://stockr.iamchart.co.kr/" target="_blank" rel="noopener">stockr.iamchart.co.kr <b>↗</b></a>
         </header>
         <div class="case-body">
           <div class="facts">
             <div class="fact"><b>문제</b><p>개인투자자가 범용 AI에 종목을 물으면 시세도 차트도 없는 일반론만 돌아옵니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>입력은 종목명 하나로 줄이고, 답은 투자 성향(공격·중립·안정), 금액, 기간, 목적에 맞춰 바꿉니다. 유사투자자문 규정상 금지되는 수익률·매매 권유 표현은 프롬프트 층에서 막았습니다.</p></div>
-            <div class="fact"><b>만든 것</b><p>국내·미국 종목 자동완성, 1M~3Y 차트와 이동평균·RSI, 추천 질문, 대화 이력. 아임차트 패밀리 서비스 11종의 배경지식 프롬프트와 질문 키워드 매핑 규칙.</p></div>
-            <div class="fact"><b>결과</b><p>2026년 7월 1일 출시. 로그인 없이 쓸 수 있고, 회사 서비스 전체의 안내 창구 역할까지 맡고 있습니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>같은 종목이라도 투자 성향, 금액, 기간, 목적에 따라 다른 답을 주도록 결과값을 개인화했습니다. 첫 답에서 끝나지 않고 후속 질문으로 파고들 수 있게 설계했고, 범용 AI보다 전문적인 분석을 목표로 잡았습니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>종목 자동완성, 차트·지표 연동, 추천 질문으로 이어지는 대화, 대화 이력 관리.</p></div>
+            <div class="fact"><b>결과</b><p>2026년 7월 1일 출시, 운영 중.</p></div>
           </div>
           <div class="visual">
-            <div class="bezel"><img src="assets/img/stockr.webp" alt="Stockr 화면" loading="lazy"></div>
+            <div class="bezel"><img src="assets/img/stockr_samsung.webp" alt="Stockr 삼성전자 분석 대화 화면" loading="lazy"></div>
           </div>
         </div>
       </div>
@@ -209,9 +203,9 @@
         </header>
         <div class="case-body">
           <div class="facts">
-            <div class="fact"><b>문제</b><p>초보 리셀러는 시세도 경쟁도 모른 채 상품을 올립니다. 개발 도중 네이버 오픈API 신규 발급이 끊겨 데이터 소스도 바꿔야 했습니다.</p></div>
-            <div class="fact"><b>기획 판단</b><p>네이버 검색광고 API 하나로 100점 점수화. 수요 25, 검색량 15, 경쟁도 20, 마진 20, 리스크 10, 시즌성 10. 비중은 슬라이더로 사용자가 바꿉니다. 품질이 안 나온 '키워드 발굴'은 폐기하고 시즌 캘린더로 대체했습니다.</p></div>
-            <div class="fact"><b>만든 것</b><p>시즌 캘린더, 상품 검증, AI 상세페이지 생성, 후보 키워드 관리, 이력. 업종 52개 인기 키워드 4.8만 개 화이트리스트. API 키는 서버에 저장하지 않는 구조.</p></div>
+            <div class="fact"><b>문제</b><p>초보 리셀러는 시세도 경쟁도 모른 채 상품을 올립니다. 이런 초보 리셀러를 위한 교육용 자료로 1인 개발한 웹페이지입니다.</p></div>
+            <div class="fact"><b>기획 판단</b><p>감이 아니라 점수로 결정하게 했습니다. 수요, 경쟁, 마진, 리스크, 시즌성을 한 점수로 묶고, 셀러의 상황에 따라 비중을 바꿀 수 있게 했습니다.</p></div>
+            <div class="fact"><b>만든 것</b><p>네이버 검색광고 API를 활용한 상품 검증과 경쟁 분석, AI API 키로 상세페이지 가이드라인을 만드는 기능(영상·사진 제작용 페이지로 확장 가능), 달마다 준비할 상품을 보여주는 시즌 캘린더.</p></div>
             <div class="fact"><b>결과</b><p>도매꾹·도매매 'AI 직원 만들기' 강의의 실습 도구로 사용. 설치형 exe 패키지도 배포.</p></div>
           </div>
           <div class="visual">
@@ -226,7 +220,7 @@
       <div class="case wrap">
         <header class="case-head">
           <div>
-            <span class="case-kicker">이커머스 매출 관리 · 'AI 직원 20명' 커리큘럼의 실동작 모듈</span>
+            <span class="case-kicker">이커머스 매출 관리 · 교육용 · 운영 중</span>
             <h3>매출관리 AI 직원</h3>
             <p class="case-one">총매출이 아니라 취소·반품·광고비·원가를 뺀 뒤 얼마가 남는지를 보여주는 셀러용 매출 화면입니다.</p>
           </div>
@@ -234,10 +228,10 @@
         </header>
         <div class="case-body">
           <div class="facts">
-            <div class="fact"><b>문제</b><p>셀러는 플랫폼별 총매출만 보고, 광고를 켠 게 득인지 실인지 끝까지 모릅니다.</p></div>
+            <div class="fact"><b>문제</b><p>의류 전문 이커머스 회사 대표와의 미팅에서 광고비, 수수료, 마진율을 한눈에 관리하기 어렵다는 니즈를 확인했습니다.</p></div>
             <div class="fact"><b>기획 판단</b><p>순매출 → 광고 효율(ROAS) → 원가 반영 실손익 순서로 화면을 배치. 예측 대신 실측만 씁니다. 품목별로 월 광고 ON/OFF를 표시해 켠 달과 끈 달의 평균 매출을 나란히 비교합니다.</p></div>
-            <div class="fact"><b>만든 것</b><p>쿠팡·네이버 탭과 합산 탭, 파일 업로드, 키워드 칩 검색, 행 단위 수정·삭제, 백업·복원. 함께 만든 CS AI 직원은 신뢰도 50% 이상 자동 답변, 20% 미만 사람 인계 규칙으로 동작합니다.</p></div>
-            <div class="fact"><b>결과</b><p>'Commerce AI Company' 커리큘럼(회사 설립 → AI 직원 채용 → 사규 → 인수인계 → 대시보드)에서 실제로 돌아가는 모듈. 1시간 실습 교육 패키지로 정리.</p></div>
+            <div class="fact"><b>만든 것</b><p>매출 파일을 올리면 취소·반품을 뺀 순매출, 광고비 대비 효율, 원가를 반영한 실손익이 한 화면에 정리됩니다. 광고를 켠 달과 끈 달의 매출을 나란히 비교해 광고가 남는 장사였는지 바로 보입니다.</p></div>
+            <div class="fact"><b>결과</b><p>이커머스 교육에 활용, 일부 교육 참가자에게 무료 배포.</p></div>
           </div>
           <div class="visual">
             <div class="bezel"><img src="assets/img/sales.webp" alt="매출관리 AI 직원 화면" loading="lazy"></div>
@@ -297,11 +291,11 @@
       <div class="slide-txt">
         <span class="case-kicker">경제금융통계 분석·리포팅 플랫폼 · 운영 중</span>
         <h3>AI 데이터맵</h3>
-        <p class="case-one">시장·거시 데이터 대시보드 위에 GPT-Chart, GPT-Table, 마켓마인드(AI 리서치·GPT-Report), 이벤트 캘린더를 얹은 회사의 데이터 플랫폼입니다.</p>
+        <p class="case-one">시장·거시 데이터와 각종 자산군에 AI를 접목해 분석하는 플랫폼입니다. GPT-Chart, GPT-Table, 마켓마인드, 이벤트 캘린더로 구성됩니다.</p>
         <ul class="did">
           <li><b>콘텐츠 구조 정의</b> 대시보드, GPT-Chart 6종, GPT-Table 5종, 마켓마인드, 이벤트 캘린더의 메뉴 트리와 각 화면이 담을 콘텐츠를 문서로 확정.</li>
-          <li><b>증권사 제안서 기획</b> DB증권·다올투자증권 대상 8페이지 제안서. "복잡하다"는 피드백에 텍스트를 줄이고 화면을 전량 모바일 세로형으로 재캡처해 3차까지 개정.</li>
-          <li><b>콘텐츠 운영 자동화</b> GPT-Report의 글로벌 모닝지표 브리핑과 이벤트 캘린더의 주간 증시일정은 제가 만든 자동화가 매 거래일 게시합니다.</li>
+          <li><b>일간 콘텐츠 포맷 설계</b> 글로벌 모닝지표 브리핑과 주간 증시일정의 구성, 출처, 발행 시각을 정해 매 거래일 같은 형식으로 나가게 했습니다.</li>
+          <li><b>콘텐츠 운영 자동화</b> 그 브리핑과 증시일정을 제가 만든 자동화가 GPT-Report와 이벤트 캘린더에 매 거래일 게시합니다.</li>
         </ul>
         <div class="slide-links">
           <a class="btn sm" href="https://ai-datamap.com/" target="_blank" rel="noopener"><span>ai-datamap.com</span><b class="arr">↗</b></a>
@@ -323,10 +317,9 @@
         <h3>아임차트M</h3>
         <p class="case-one">분할매매 표, 고저가 예측, 웨이브 차트와 Dr.캔들, 오늘의 공략주, 실시간 푸시톡을 담은 아임차트의 모바일 서비스입니다.</p>
         <ul class="did">
-          <li><b>콘텐츠 선정</b> 오늘의 공략주, 추세전환 종목, 푸시톡으로 나갈 개장전략·스팟시황 등 매일 채워지는 콘텐츠의 종류와 시각을 정했습니다.</li>
-          <li><b>UI 기획과 설명서</b> 화면별 설명서와 사용자 설명서를 만들었고, 캡처 자동화로 화면이 바뀔 때마다 다시 뽑을 수 있게 했습니다.</li>
-          <li><b>채널 분석</b> 프리미엄콘텐츠 조회수 급감을 실측으로 진단(인당 월 조회 75→4.8회, 검색 개편 가설 기각)하고 발행 6편→1~2편 축소 실험, 07:30 예약 발행, 무료 쿠폰 유입 전략을 제안했습니다.</li>
-        </ul>
+          <li><b>콘텐츠 선정</b> 아임차트 PC 버전의 핵심 콘텐츠를 골라 모바일에 맞게 재구성하고, 화면 UI를 기획했습니다.</li>
+          <li><b>푸시톡 콘텐츠 흐름</b> 개장 전략, 오늘의 공략주, 시세 알림이 정해진 시각에 푸시톡으로 이어지도록 하루 콘텐츠 흐름을 설계했습니다.</li>
+          </ul>
         <div class="slide-links">
           <a class="btn sm" href="https://iamchart.co.kr/" target="_blank" rel="noopener"><span>iamchart.co.kr</span><b class="arr">↗</b></a>
         </div>
@@ -348,7 +341,6 @@
   <div class="lec-grid">
     <div class="sec-head rv">
       <h2>강의</h2>
-      <p>만든 것을 남에게 가르칠 수 있을 때까지 씁니다. 실습형 AI 강의 4건.</p>
     </div>
     <ul class="lec-list">
       <li class="lec rv">
@@ -381,7 +373,7 @@
     <div class="etc-big rv">
       <span class="case-kicker">유튜브 · 치지직 운영 · 2021.01 ~ 2021.03</span>
       <h3>2개월, 구독자 <b data-count="6000" data-fmt="ko">0</b>명</h3>
-      <p>기획과 편집을 총괄해 개인 채널을 2개월 만에 6천 명까지 키웠습니다. 경영 전략 변경으로 프로젝트는 조기 종료.</p>
+      <p>기획과 편집을 총괄해 개인 채널을 2개월 만에 6천 명까지 키웠습니다.</p>
       <ul class="chips">
         <li>OBS · 노이즈 제거 · 크로마키</li><li>프리미어 프로 편집</li><li>썸네일 제작</li><li>영업·마케팅 채널 운영</li>
       </ul>

@@ -153,7 +153,7 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 .step:nth-child(4){transition-delay:1.05s}.step:nth-child(4)::before{transition-delay:1.05s}
 .step:nth-child(5){transition-delay:1.3s}.step:nth-child(5)::before{transition-delay:1.3s}
 .step b{display:block;font-family:"Paperlogy",sans-serif;font-weight:800;font-size:clamp(18px,1.5vw,22px);letter-spacing:-.02em}
-.step p{margin-top:10px;font-size:14.5px;color:var(--ink2);line-height:1.6}
+.step p{margin-top:10px;font-size:15px;color:var(--ink2);line-height:1.6}
 .tags{display:inline-block;margin-top:12px;font-size:12px;color:var(--accent);padding:4px 10px;border-radius:999px;background:var(--accent-soft)}
 
 /* ================= case studies (sticky stack) ================= */
@@ -262,7 +262,7 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 /* ================= contact ================= */
 .contact{padding-bottom:clamp(60px,8vw,110px);display:flex;flex-direction:column;align-items:flex-start;gap:22px}
 .contact-lead{font-size:clamp(17px,1.5vw,22px);color:var(--ink2)}
-.big-mail{display:inline-block;font-family:"Paperlogy",sans-serif;font-weight:800;font-size:clamp(28px,6.2vw,96px);letter-spacing:-.04em;line-height:1.05;word-break:break-all}
+.big-mail{display:inline-block;font-family:"Paperlogy",sans-serif;font-weight:800;font-size:clamp(24px,4.4vw,62px);letter-spacing:-.04em;line-height:1.1;word-break:break-all}
 .big-mail span{background-image:linear-gradient(var(--accent),var(--accent));background-repeat:no-repeat;background-size:0 .1em;background-position:0 94%;transition:background-size .7s var(--ease)}
 .big-mail:hover span{background-size:100% .1em}
 .contact-row{display:flex;gap:16px;align-items:center;font-size:clamp(16px,1.3vw,20px);color:var(--ink2)}
