@@ -179,7 +179,7 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 .fact:nth-child(4) p{color:var(--ink)}
 .visual{display:flex;flex-direction:column;gap:14px;min-width:0}
 .bezel{padding:6px;border-radius:var(--ri);background:var(--shell);border:1px solid var(--line);overflow:hidden;transition:transform .7s var(--ease),box-shadow .7s var(--ease)}
-.bezel img{width:100%;border-radius:calc(var(--ri) - 6px);background:var(--card);aspect-ratio:16/10;object-fit:cover;object-position:top}
+.bezel img,.bezel video{width:100%;border-radius:calc(var(--ri) - 6px);background:var(--card);aspect-ratio:16/10;object-fit:cover;object-position:top}
 .bezel:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .bezel.cap figcaption{font-size:12.5px;color:var(--ink3);padding:8px 6px 2px}
 .marq{overflow:hidden;width:0;min-width:100%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
