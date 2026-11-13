@@ -84,7 +84,7 @@ h2{font-size:clamp(28px,3.4vw,40px)}
 .bar{height:7px;border-radius:4px;background:var(--blue-lt);overflow:hidden}.bar i{display:block;height:100%;background:var(--blue);border-radius:4px;width:0;transition:width 1s var(--ease)}
 .on .bar i{width:var(--w)}
 .sig .v{color:var(--blue);font-weight:700;text-align:right;font-size:13px}
-.tip{position:absolute;z-index:5;left:22px;top:28px;width:330px;background:var(--navy);color:#fff;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.6;opacity:0;transform:translateY(6px);pointer-events:none;transition:all .3s var(--ease);box-shadow:0 14px 40px rgba(21,26,43,.25)}
+.tip{position:absolute;z-index:5;left:22px;top:28px;width:min(330px,calc(100vw - 96px));background:var(--navy);color:#fff;border-radius:10px;padding:12px 14px;font-size:12.5px;line-height:1.6;opacity:0;transform:translateY(6px);pointer-events:none;transition:all .3s var(--ease);box-shadow:0 14px 40px rgba(21,26,43,.25)}
 .sig:hover .tip{opacity:1;transform:translateY(0)}
 .tip b{font-size:13.5px}.tip .id{color:var(--gray-lt);font-size:11px;margin-left:6px}.tip .k{color:var(--gray-lt);margin-right:6px}.tip div{margin-top:3px}
 .demo .foot{margin-top:16px;color:var(--gray-lt);font-size:12px}

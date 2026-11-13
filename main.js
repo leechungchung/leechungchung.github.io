@@ -106,12 +106,13 @@
       const scale = img.offsetHeight / (img.naturalHeight || 1);
       const end = Math.max(0, img.offsetTop + img.offsetHeight - view.clientHeight);
       const mid = Math.min(end, Math.max(0, (+view.dataset.fast || 0) * scale - 18));
-      const hold = 1000, fast = mid ? 900 : 0, slow = (end - mid) / 115 * 1000;
-      const total = hold + fast + slow;
+      const hold = 1000, fast = mid ? 900 : 0, read = mid ? 2000 : 0, slow = (end - mid) / 115 * 1000;
+      const total = hold + fast + read + slow;
       anim = img.animate([
         { transform: 'translateY(0)', offset: 0 },
         { transform: 'translateY(0)', offset: hold / total, easing: 'cubic-bezier(.65,0,.35,1)' },
-        { transform: `translateY(${-mid}px)`, offset: (hold + fast) / total, easing: 'linear' },
+        { transform: `translateY(${-mid}px)`, offset: (hold + fast) / total },
+        { transform: `translateY(${-mid}px)`, offset: (hold + fast + read) / total, easing: 'linear' },
         { transform: `translateY(${-end}px)`, offset: 1 }
       ], { duration: total, fill: 'forwards' });
     };
