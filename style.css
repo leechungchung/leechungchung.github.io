@@ -190,6 +190,10 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips li{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);transition:transform .4s var(--ease),border-color .3s,color .3s}
 .chips li:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--accent)}
+.press-stage{position:relative}
+.press-view{position:absolute;inset:6px;border-radius:calc(var(--ri) - 6px);overflow:hidden;background:#fff;opacity:0;pointer-events:none;transition:opacity .35s var(--ease)}
+.press-view.on{opacity:1}
+.bezel .press-view img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:fill;border-radius:0;background:none;will-change:transform}
 .press{display:flex;flex-direction:column}
 .press>b{font-size:12.5px;letter-spacing:.06em;color:var(--accent);margin-bottom:4px}
 .press a{display:grid;grid-template-columns:1fr auto;column-gap:12px;padding:10px 0;border-bottom:1px solid var(--line);transition:color .3s}

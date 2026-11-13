@@ -91,6 +91,34 @@
   rail.addEventListener('keydown', (e) => { if (e.key === 'ArrowRight') go(idx + 1); if (e.key === 'ArrowLeft') go(idx - 1); });
   rail.tabIndex = 0;
 
+  /* ---------- press links: preview the article inside the Stockr frame ---------- */
+  document.querySelectorAll('[data-press]').forEach(a => {
+    const view = document.getElementById(a.dataset.press);
+    const img = view && view.querySelector('img');
+    if (!img) return;
+    img.loading = 'eager';
+    let timer = 0;
+    const show = () => {
+      clearTimeout(timer);
+      img.style.transition = 'none'; img.style.transform = 'translateY(0)';
+      view.classList.add('on');
+      if (reduce) return;
+      const dist = Math.max(0, img.offsetHeight - view.clientHeight);
+      timer = setTimeout(() => {
+        img.style.transition = `transform ${dist / 115}s linear`;
+        img.style.transform = `translateY(${-dist}px)`;
+      }, 700);
+    };
+    const hide = () => {
+      clearTimeout(timer);
+      view.classList.remove('on');
+      const y = getComputedStyle(img).transform;
+      img.style.transition = 'none'; img.style.transform = y === 'none' ? '' : y;
+    };
+    a.addEventListener('mouseenter', show); a.addEventListener('focus', show);
+    a.addEventListener('mouseleave', hide); a.addEventListener('blur', hide);
+  });
+
   /* ---------- copy email ---------- */
   const copy = document.getElementById('copy');
   copy.addEventListener('click', async () => {
