@@ -97,23 +97,29 @@
     const img = view && view.querySelector('img');
     if (!img) return;
     img.loading = 'eager';
-    let timer = 0;
+    let anim = null;
     const show = () => {
-      clearTimeout(timer);
-      img.style.transition = 'none'; img.style.transform = 'translateY(0)';
+      if (anim) anim.cancel();
+      img.style.transform = '';
       view.classList.add('on');
       if (reduce) return;
-      const dist = Math.max(0, img.offsetHeight - view.clientHeight);
-      timer = setTimeout(() => {
-        img.style.transition = `transform ${dist / 115}s linear`;
-        img.style.transform = `translateY(${-dist}px)`;
-      }, 700);
+      const scale = img.offsetHeight / (img.naturalHeight || 1);
+      const end = Math.max(0, img.offsetTop + img.offsetHeight - view.clientHeight);
+      const mid = Math.min(end, Math.max(0, (+view.dataset.fast || 0) * scale - 18));
+      const hold = 1000, fast = mid ? 900 : 0, slow = (end - mid) / 115 * 1000;
+      const total = hold + fast + slow;
+      anim = img.animate([
+        { transform: 'translateY(0)', offset: 0 },
+        { transform: 'translateY(0)', offset: hold / total, easing: 'cubic-bezier(.65,0,.35,1)' },
+        { transform: `translateY(${-mid}px)`, offset: (hold + fast) / total, easing: 'linear' },
+        { transform: `translateY(${-end}px)`, offset: 1 }
+      ], { duration: total, fill: 'forwards' });
     };
     const hide = () => {
-      clearTimeout(timer);
       view.classList.remove('on');
-      const y = getComputedStyle(img).transform;
-      img.style.transition = 'none'; img.style.transform = y === 'none' ? '' : y;
+      if (!anim) return;
+      img.style.transform = getComputedStyle(img).transform;
+      anim.cancel(); anim = null;
     };
     a.addEventListener('mouseenter', show); a.addEventListener('focus', show);
     a.addEventListener('mouseleave', hide); a.addEventListener('blur', hide);

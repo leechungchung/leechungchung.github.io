@@ -178,6 +178,10 @@ h2{font-size:clamp(28px,3.4vw,40px)}
 .foot .brand{font-family:"Playfair Display",Georgia,serif;font-size:20px;letter-spacing:.08em;color:var(--ink)}
 .foot .brand small{display:block;font-family:Pretendard,sans-serif;font-size:10px;letter-spacing:.3em;color:var(--gray-lt);margin-top:2px}
 .foot .tag{margin-top:12px;max-width:34ch;line-height:1.6}
+.foot .wrap{grid-template-columns:1fr}.foot .copy{grid-column:auto}
+.foot .fhead{display:flex;justify-content:space-between;align-items:flex-end;gap:14px 40px;flex-wrap:wrap}
+.foot .fhead .tag{margin-top:0;max-width:none;text-align:right}
+@media(max-width:720px){.foot .fhead .tag{text-align:left}}
 .foot h4{font-size:12px;letter-spacing:.06em;color:var(--gray);margin-bottom:10px}
 .foot ul{list-style:none;display:grid;gap:8px}
 .foot ul a,.foot ul button{color:var(--ink);font-size:14px}
@@ -398,8 +402,8 @@ h2{font-size:clamp(28px,3.4vw,40px)}
 </div></div></section>
 
 <footer class="foot"><div class="wrap">
-  <div><div class="brand">ADAMS<small>AI DATA ASSISTANT MEDIA SYSTEM</small></div><div class="tag">장이 끝나면 시장 전체를 다시 읽고, 오늘 볼 만한 움직임만 근거가 보이는 기사로 씁니다.</div></div>
-  <div class="copy"><span>Copyright © 이에스플랜잇. All rights reserved.</span><span>자동 생성 기사의 투자 판단 책임은 이용자 본인에게 있습니다. 출처(ADAMS)를 밝히면 자유롭게 퍼가실 수 있습니다.</span></div>
+  <div class="fhead"><div class="brand">ADAMS<small>AI DATA ASSISTANT MEDIA SYSTEM</small></div><div class="tag">장이 끝나면 시장 전체를 다시 읽고, 오늘 볼 만한 움직임만 근거가 보이는 기사로 씁니다.</div></div>
+  <div class="copy"><span>자동 생성 기사의 투자 판단 책임은 이용자 본인에게 있습니다. 출처(ADAMS)를 밝히면 자유롭게 퍼가실 수 있습니다.</span></div>
 </div></footer>
 <div class="modal" id="contactModal" onclick="if(event.target===this)closeContact()">
   <button class="x" onclick="closeContact()">✕</button>

@@ -191,7 +191,7 @@ h4{font-size:clamp(17px,1.4vw,20px);font-weight:700;letter-spacing:-.02em}
 .chips li{font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);transition:transform .4s var(--ease),border-color .3s,color .3s}
 .chips li:hover{transform:translateY(-2px);border-color:var(--accent);color:var(--accent)}
 .press-stage{position:relative}
-.press-view{position:absolute;inset:6px;border-radius:calc(var(--ri) - 6px);overflow:hidden;background:#fff;opacity:0;pointer-events:none;transition:opacity .35s var(--ease)}
+.press-view{position:absolute;inset:6px;padding-top:22px;border-radius:calc(var(--ri) - 6px);overflow:hidden;background:#fff;opacity:0;pointer-events:none;transition:opacity .35s var(--ease)}
 .press-view.on{opacity:1}
 .bezel .press-view img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:fill;border-radius:0;background:none;will-change:transform}
 .press{display:flex;flex-direction:column}
