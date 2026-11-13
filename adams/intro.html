@@ -279,7 +279,7 @@ h2{font-size:clamp(28px,3.4vw,40px)}
 
 <nav class="nav"><div class="wrap">
   <a class="logo" href="#">ADAMS</a>
-  <ul><li><a href="#why">ADAMS</a></li><li><a href="#flow">작동 방식</a></li><li><a href="#types">기사 유형</a></li><li><a href="#price">요금</a></li><li><a href="#about">회사 소개</a></li><li><a href="#" onclick="openDoc('guide');return false">사용 안내</a></li></ul>
+  <ul><li><a href="#why">ADAMS</a></li><li><a href="#flow">작동 방식</a></li><li><a href="#types">기사 유형</a></li><li><a href="#price">요금</a></li><li><a href="#" onclick="openDoc('guide');return false">사용 안내</a></li></ul>
   <a class="btn pri sm" href="http://121.171.120.105/reader/" target="_blank" rel="noopener">기사 보기<span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
 </div></nav>
 
@@ -391,21 +391,6 @@ h2{font-size:clamp(28px,3.4vw,40px)}
   </div>
 </div></section>
 
-<section class="about" id="about"><div class="wrap">
-  <div class="rv">
-    <h2>이에스플랜잇</h2>
-    <p>2020년 서울 여의도에서 출발한 금융 데이터·AI 기업입니다. 아임차트를 비롯한 AI 금융투자 솔루션과 금융투자 교육, 실습 환경을 만들어 왔고, 지금은 시장 전체를 읽어 근거가 보이는 기사로 쓰는 ADAMS를 만들고 있습니다.</p>
-    <div class="links"><a class="btn sec sm" href="#" onclick="openDoc('about');return false">회사 소개<span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a><a class="btn sec sm" href="#" onclick="openDoc('guide');return false">사용 안내<span class="ic"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></div>
-  </div>
-  <div class="facts rv">
-    <div><small>회사명</small><b>이에스플랜잇 주식회사</b></div>
-    <div><small>대표</small><b>황인환</b></div>
-    <div><small>사업자등록번호</small><b>207-87-01125</b></div>
-    <div><small>전화</small><b>1661-3165</b> <span style="color:var(--gray-lt);font-size:13px">평일 10:00 ~ 17:00</span></div>
-    <div class="w"><small>주소</small><b>서울 영등포구 국제금융로6길 30, 4F·5F (여의도동, 백상빌딩)</b></div>
-    <div class="w"><small>이메일</small><b><span class="cp" onclick="copyText('iamchart@esplanit.com')">iamchart@esplanit.com</span></b></div>
-  </div>
-</div></section>
 
 <section class="end"><div class="wrap"><div class="box rv">
   <div><h2>오늘 시장이 남긴 신호를 읽어 보세요</h2><p>장이 끝날 때마다 새 기사가 올라옵니다.</p></div>
@@ -414,8 +399,6 @@ h2{font-size:clamp(28px,3.4vw,40px)}
 
 <footer class="foot"><div class="wrap">
   <div><div class="brand">ADAMS<small>AI DATA ASSISTANT MEDIA SYSTEM</small></div><div class="tag">장이 끝나면 시장 전체를 다시 읽고, 오늘 볼 만한 움직임만 근거가 보이는 기사로 씁니다.</div></div>
-  <div><h4>문서</h4><ul><li><button onclick="openDoc('about')">회사 소개</button></li><li><button onclick="openDoc('guide')">사용 안내</button></li><li><button onclick="openContact()">문의</button></li><li><a href="http://121.171.120.105/reader/" target="_blank" rel="noopener">기사 보기</a></li></ul></div>
-  <div><h4>연락처</h4><div class="cinfo">이에스플랜잇 주식회사 · 대표 황인환 · 사업자등록번호 207-87-01125<br>통신판매업 제2020-서울영등포-0316호<br>서울 영등포구 국제금융로6길 30, 4F·5F (여의도동, 백상빌딩)<br>전화 1661-3165 (평일 10:00 ~ 17:00) · <span class="cp" onclick="copyText('iamchart@esplanit.com')">iamchart@esplanit.com</span></div></div>
   <div class="copy"><span>Copyright © 이에스플랜잇. All rights reserved.</span><span>자동 생성 기사의 투자 판단 책임은 이용자 본인에게 있습니다. 출처(ADAMS)를 밝히면 자유롭게 퍼가실 수 있습니다.</span></div>
 </div></footer>
 <div class="modal" id="contactModal" onclick="if(event.target===this)closeContact()">
